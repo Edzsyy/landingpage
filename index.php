@@ -1,47 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LGU E-Services</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./assets/style.css">
-    <link rel="shortcut icon" href="./assets/img/logo.jpg" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&display=swap"
-        rel="stylesheet">
-</head>
-
+<?php 
+include('./assets/inc/header.php');
+?>
 <body>
 
-    <div class="header">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-md-6 text-center text-md-left">
-                    <span class="timestamp">TUESDAY, FEBRUARY 25 2025, 07:01:48 PM</span>
-                </div>
-                <div class="col-md-6 text-center text-md-right">
-                    <div class="profile-info">
-                        <span>Logged in as: <strong>EDGENIEL BUHIAN</strong></span>
-                        <i class="fa-solid fa-caret-down dropdown-icon"></i>
-                        <div class="dropdown-menu">
-                            <a href="#">Profile</a>
-                            <a href="#">Logout</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<header class="header">
+  <div class="container">
+    <div class="timestamp-login">
+      <div class="timestamp">WEDNESDAY, FEBRUARY 26 2025 , 07:42:44 PM</div>
     </div>
+    <div class="logo-section">
+      <img src="./assets/img/logo.jpg" alt="QCe Logo" class="logo-img">
+    </div>
+    <div class="profile-info">
+      <span>Logged in as: <a href="#" class="user-name">EDGENIEL BUHIAN</a></span>
+      <span class="dropdown-icon">&#9660;</span>
+      <div class="dropdown-menu" id="dropdownMenu">
+        <a href="profile.php">Profile</a>
+        <a href="#">Logout</a>
+      </div>
+    </div>
+  </div>
+</header>
+
 
 
     <div class="welcome-section">
         <div class="container">
-            <h1 style="font-family: 'Open Sans', sans-serif;">WELCOME TO</h1>
-            <p style="font-family: 'Open Sans', sans-serif;">LGU E-SERVICES</p>
+            <h3 style="font-family: 'Open Sans', sans-serif;">WELCOME TO</>
+            <h1 style="font-family: 'Open Sans', sans-serif;"><strong>LGU E-SERVICES</strong></>
         </div>
     </div>
 
@@ -67,7 +53,7 @@
                 <div class="carousel-item active">
                     <img src="https://i.imgur.com/D9l483q.jpg" class="d-block w-100" alt="Service 1">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>QC VAX EASY</h5>
+                        <h5>LGU VAX EASY</h5>
                         <p>Get vaccinated easily.</p>
                     </div>
                 </div>
@@ -102,7 +88,7 @@
                 <div class="card h-100 shadow-sm custom-card">
                     <img src="https://i.imgur.com/X8N9X37.png" alt="QC VAX EASY" class="card-img-top">
                     <div class="card-body">
-                        <h5 class="card-title" style="font-size: 16px; color: #3498db;">QC VAX EASY</h5>
+                        <h5 class="card-title" style="font-size: 16px; color: #191d67;">QC VAX EASY</h5>
                         <p class="card-text" style="font-size: 14px;">Vaccination made easy and accessible.</p>
                         <a href="#" class="btn btn-register btn-ripple">Learn More</a>
                     </div>
@@ -112,7 +98,7 @@
                 <div class="card h-100 shadow-sm custom-card">
                     <img src="https://i.imgur.com/x0mE56F.png" alt="QCitizen ID eApplication" class="card-img-top">
                     <div class="card-body">
-                        <h5 class="card-title" style="font-size: 16px; color: #3498db;">QCitizen ID eApplication</h5>
+                        <h5 class="card-title" style="font-size: 16px; color: #191d67;">QCitizen ID eApplication</h5>
                         <p class="card-text" style="font-size: 14px;">Apply for your QCitizen ID online.</p>
                         <a href="#" class="btn btn-register btn-ripple">Learn More</a>
                     </div>
@@ -122,7 +108,7 @@
                 <div class="card h-100 shadow-sm custom-card">
                     <img src="https://i.imgur.com/u1L4O4x.png" alt="Business One Stop Shop" class="card-img-top">
                     <div class="card-body">
-                        <h5 class="card-title" style="font-size: 16px; color: #3498db;">Business One Stop Shop</h5>
+                        <h5 class="card-title" style="font-size: 16px; color: #191d67;">Business One Stop Shop</h5>
                         <p class="card-text" style="font-size: 14px;">All your business needs in one place.</p>
                         <a href="#" class="btn btn-register btn-ripple">Learn More</a>
                     </div>
@@ -166,7 +152,7 @@
 
                 setTimeout(() => {
                     ripple.remove();
-                }, 600); // Adjust time to match your CSS animation
+                }, 600);
             });
         });
         document.addEventListener("DOMContentLoaded", function() {
